@@ -12,7 +12,7 @@
         'prefixes': ['em/'],
 
         'tokens': {
-            'discord': 'sek.rit.token',
+            'discord': 'ODg0ODAzOTI4MzU5ODI5NTE0.YTdz3w.z-GzgE8R7jbOm3xsczIuhMc3UXo',
         },
 
     'ignore_bots': {
@@ -31,7 +31,7 @@
         'socks5_proxy_url': None,
         # whether to use socks5 for all HTTP operations (other than discord.py)
         'use_socks5_for_all_connections': False,
-        'user_agent': 'EmoteManagerBot (https://github.com/iomintz/emote-manager-bot)',
+        'user_agent': 'EmoteManagerBot (https://github.com/uhIgnacio/EmoteManager)',
         # set to None to use the default of https://ec.emote.bot/api/v0
         'ec_api_base_url': None,
         # timeout for the initial HEAD request before retrieving any images (up this if using Tor)
@@ -46,8 +46,8 @@
         # so that both the staging and the stable versions of the bot can use them
         'response_emojis': {
             'success': {  # emotes used to indicate success or failure
-                False: '<:error:478164511879069707>',
-                True: '<:success:478164452261363712>'
+                False: '', # <:EmoteName:ID>
+                True: '' # <:EmoteName:ID>
             },
         },
 }
