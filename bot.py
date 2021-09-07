@@ -7,7 +7,7 @@ import base64
 import logging
 import traceback
 
-import discord
+import nextcord
 from bot_bin.bot import Bot
 from discord.ext import commands
 
