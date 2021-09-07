@@ -127,7 +127,7 @@ class Emotes(commands.Cog):
         You can use it like this:
         `add :thonkang:` (if you already have that emote)
         `add rollsafe https://image.noelshack.com/fichiers/2017/06/1486495269-rollsafe.png`
-        `add speedtest <https://cdn.discord.com/emojis/379127000398430219.png>`
+        `add speedtest <https://cdn.discordapp.com/emojis/379127000398430219.png>`
 
         With a file attachment:
         `add name` will upload a new emote using the first attachment as the image and call it `name`
