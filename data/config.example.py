@@ -12,7 +12,7 @@
         'prefixes': ['em/'],
 
         'tokens': {
-            'discord': 'ODg0ODAzOTI4MzU5ODI5NTE0.YTdz3w.z-GzgE8R7jbOm3xsczIuhMc3UXo',
+            'discord': 'bot.token',
         },
 
     'ignore_bots': {
