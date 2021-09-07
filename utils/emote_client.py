@@ -10,10 +10,10 @@ import datetime
 import urllib.parse
 from typing import Dict
 from http import HTTPStatus
-from discord import PartialEmoji
+from nextcord import PartialEmoji
 import utils.image as image_utils
 from utils.errors import RateLimitedError
-from discord import HTTPException, Forbidden, NotFound, DiscordServerError
+from nextcord import HTTPException, Forbidden, NotFound, DiscordServerError
 
 GuildId = int
 
@@ -29,7 +29,7 @@ async def json_or_text(resp):
 	return text
 
 class EmoteClient:
-	BASE_URL = 'https://discord.com/api/v7'
+	BASE_URL = 'https://discord.com/api/v9'
 	HTTP_ERROR_CLASSES = {
 		HTTPStatus.FORBIDDEN: Forbidden,
 		HTTPStatus.NOT_FOUND: NotFound,
