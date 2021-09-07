@@ -127,7 +127,7 @@ class Emotes(commands.Cog):
         You can use it like this:
         `add :thonkang:` (if you already have that emote)
         `add rollsafe https://image.noelshack.com/fichiers/2017/06/1486495269-rollsafe.png`
-        `add speedtest <https://cdn.nextcordapp.com/emojis/379127000398430219.png>`
+        `add speedtest <https://cdn.discord.com/emojis/379127000398430219.png>`
 
         With a file attachment:
         `add name` will upload a new emote using the first attachment as the image and call it `name`
@@ -204,7 +204,7 @@ class Emotes(commands.Cog):
 
     @staticmethod
     def format_emote_filename(filename):
-        """format a filename to an emote name as nextcord does when you upload an emote image"""
+        """format a filename to an emote name as discord does when you upload an emote image"""
         left, sep, right = posixpath.splitext(filename)[0].rpartition('-')
         return (left or right).replace(' ', '')
 
@@ -270,7 +270,7 @@ class Emotes(commands.Cog):
 
             name = f'{name}.{"gif" if emote.animated else "png"}'
 
-            # place some level of trust on nextcord's CDN to actually give us images
+            # place some level of trust on discord's CDN to actually give us images
             data = await self.fetch_safe(str(emote.url), validate_headers=False)
             if type(data) is str:  # error case
                 await context.send(f'{emote}: {data}')
