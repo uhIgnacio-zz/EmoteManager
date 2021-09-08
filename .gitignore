@@ -15,3 +15,7 @@ venv/
 *.gif
 *.jpg
 *.zip
+
+# gitpod.io
+gitpod.yml
+.vscode

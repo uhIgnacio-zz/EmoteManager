@@ -46,8 +46,8 @@
         # so that both the staging and the stable versions of the bot can use them
         'response_emojis': {
             'success': {  # emotes used to indicate success or failure
-                False: '',  # <:EmoteName:ID>
-                True: ''  # <:EmoteName:ID>
+                False: '',  # <:EmoteName:ID> or '❌'
+                True: ''  # <:EmoteName:ID> or '✅'
             },
     },
 }
