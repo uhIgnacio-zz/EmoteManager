@@ -52,21 +52,11 @@ class Meta(commands.Cog):
                 with contextlib.suppress(nextcord.HTTPException):
                     await context.send('📬')
 
-    @commands.command(aliases=['inv'])
+    @commands.command(aliases=['inv']) # https://discordapi.com/permissions.html
     async def invite(self, context):
         """Gives you a link to add me to your server."""
-        permissions = nextcord.Permissions()
-        permissions.update(**dict.fromkeys((
-            'read_messages',
-            'send_messages',
-            'add_reactions',
-            'external_emojis',
-            'manage_emojis',
-            'embed_links',
-            'attach_files',
-        ), True))
 
-        await context.send('<%s>' % nextcord.utils.oauth_url(self.bot.user.id, permissions))
+        await context.send('<%s>' % nextcord.utils.oauth_url(self.bot.user.id, permissions=nextcord.Permissions(permissions=1074056256)))
 
 
 def setup(bot):
